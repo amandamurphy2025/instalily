@@ -1,0 +1,223 @@
+.part-card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+    margin-top: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+  
+  .part-header {
+    background-color: #1b3875;
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .part-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .part-id {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .part-content {
+    display: flex;
+    padding: 16px;
+  }
+  
+  .part-image-container {
+    flex: 0 0 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-right: 16px;
+    overflow: hidden;
+  }
+  
+  .part-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .part-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .part-price-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  
+  .part-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1b3875;
+  }
+  
+  .part-stock {
+    margin-left: 12px;
+    padding: 3px 8px;
+    background-color: #e6f7e6;
+    color: #2e7d32;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+  }
+  
+  .part-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .spec-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .spec-label {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .spec-value {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .transaction-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .transaction-button {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .transaction-button.primary {
+    background-color: #e64a19;
+    color: white;
+  }
+  
+  .transaction-button.primary:hover {
+    background-color: #d84315;
+  }
+  
+  .transaction-button.secondary {
+    background-color: transparent;
+    color: #1b3875;
+    border: 1px solid #1b3875;
+  }
+  
+  .transaction-button.secondary:hover {
+    background-color: rgba(27, 56, 117, 0.05);
+  }
+  
+  .order-info {
+    background-color: #f5f8ff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #e0e7ff;
+  }
+  
+  .order-info-item {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-info-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .order-info-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .order-info-value {
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .part-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+  }
+  
+  .part-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .part-button.outline {
+    background-color: transparent;
+    color: #1b3875;
+    border: 1px solid #ccd5e6;
+  }
+  
+  .part-button.outline:hover {
+    background-color: rgba(27, 56, 117, 0.05);
+    border-color: #1b3875;
+  }
+  
+  @media (max-width: 600px) {
+    .part-content {
+      flex-direction: column;
+    }
+    
+    .part-image-container {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    
+    .transaction-actions {
+      flex-direction: column;
+    }
+  }

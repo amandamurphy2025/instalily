@@ -2,11 +2,16 @@
 
 * {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .App {
-  background-color: white;
+  background-color: #f1f2f6;
+}
+
+.title {
+  color: white;
+  font-size: 30px;
 }
 
 .heading {
@@ -14,12 +19,38 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255); 
+  background: rgb(237, 197, 162); 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   font-weight: 700;
   font-size: 16px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
+  padding-left: 20px;
+}
+
+.heading img{
+  width: 80px;
+}
+
+.logo img{
+  height: 200px;
+  width: 100%;
+}
+
+.info {
+  margin-right: 30px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.phone {
+  color: black;
+}
+
+.hours {
+  color: black;
 }
