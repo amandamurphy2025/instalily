@@ -25,7 +25,6 @@ The user sends a message! And then...
  - server requests DeepSeek
  - server returns DeepSeek's response to frontend
 
-
  # ------ Process, Approach, & Challenges -------
 Overall idea:
 - extract key information and sentiments from user's input
@@ -54,3 +53,6 @@ Examples:
 ![Full response](images/response.png)
 
 ![Product Card](images/product.png)
+
+
+
